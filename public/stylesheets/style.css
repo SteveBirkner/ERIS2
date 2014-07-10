@@ -1,8 +1,71 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	background-color: #E3E3E3; 
 }
+.container {
+	width: 100%;
+	height: 100px;
+	background-color: #FFFFFF;
+	padding: 0px;
+}
+.entry {
+	width: 50%;
+	height: 100%;
+	padding: 10px;
+	background-color: #E3E3E3; 
+	float: left;
 
-a {
-  color: #00B7FF;
+}
+.entHead {
+	width: 100%;
+	text-align: center;
+	font-size: 24px;
+}
+.entCon {
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 18px;
+
+}
+.entInfo {
+	text-align: center;
+}
+.entLog {
+	
+}
+.header {
+	width: 100%;
+	height: 80px;
+	background-color: #E3E3E3; 
+}
+.headTitle {
+	float: left;
+	font-size: 36px;
+	margin-top: 15px;
+	margin-left: 15px;
+	color: #3c557d;
+}
+.logo {
+	margin-top: 5px;
+	margin-left: 10px;
+	float: left;
+}
+.wCon {
+	font-size: 14px;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+.wHeader {
+	font-size: 24px;
+	margin-left: 25px;
+	margin-top: 17px;
+}
+.welcome {
+	background-color: #FFFFFF;
+	padding-bottom: 5px;
+	padding-top: 2px;
 }

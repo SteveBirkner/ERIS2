@@ -1,5 +1,22 @@
 extends layout
 
 block content
-  h1 Steven
-  p Welcome to #{title}
+	.header
+		img.logo(src='/images/erisLogo.png')
+		.headTitle ERIS
+	.welcome
+		.wHeader Welcome!
+		.wCon The Emergency Response Information System (ERIS) is a web-based extension of the NJMC’s Municipal Map application that emergency officials and first responders utilize to manage, plan, and respond to emergencies.
+	.container
+		.entry#signup
+			.entHead Sign Up
+			.entCon 
+				p Emergency responders wishing to gain access to ERIS, please contact: 
+				br
+				p.entInfo Dom Elefante
+				p.entInfo dominador.elefante@njmeadowlands.gov
+				p.entInfo (201) 460-4669
+		.entry#login
+			.entHead Log In
+			.entLog 
+				
