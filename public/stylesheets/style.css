@@ -1,6 +1,4 @@
-body {
-	background-color: #E3E3E3; 
-}
+
 .container {
 	width: 100%;
 	height: 100px;
@@ -10,8 +8,7 @@ body {
 .entry {
 	width: 50%;
 	height: 100%;
-	padding: 10px;
-	background-color: #E3E3E3; 
+	padding: 10px; 
 	float: left;
 
 }
@@ -31,9 +28,6 @@ body {
 }
 .entInfo {
 	text-align: center;
-}
-.entLog {
-	
 }
 .header {
 	width: 100%;

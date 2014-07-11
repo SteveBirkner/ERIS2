@@ -18,5 +18,12 @@ block content
 				p.entInfo (201) 460-4669
 		.entry#login
 			.entHead Log In
-			.entLog 
-				
+			.entCon
+				form(role='form', action='/login', method='post', onSubmit='return loginVal()')
+					.form-group
+						label(for='userName') User Name:
+						input#userName.form-control(type='text', name='userName')
+					.form-group
+						label(for='password') Password:
+						input#password.form-control(type='password', name='password')
+					button.btn.btn-default(type='submit') Log In

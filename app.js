@@ -6,11 +6,7 @@ var express = require('express'),
     session = require('express-session')
     bodyParser = require('body-parser');
 
-//Routes Namespace 
 
-var routes = require('./routes/index'),
-    users = require('./routes/users'),
-    login = require('./routes/login')
 
 var app = express();
 

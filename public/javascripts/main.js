@@ -1,3 +1,4 @@
-$(document).ready(function() {
-
-});
+//Validation for login form
+function loginVal() {
+	return true;
+}

@@ -6,6 +6,7 @@ var index = require('./routes/index'),
 
 app.get('/', index.index);
 app.post('/login', login.login);
+app.post('/login/auth/', login.auth);
 
 
 }
