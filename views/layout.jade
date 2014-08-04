@@ -2,8 +2,11 @@ doctype html
 html
   head
     title= title
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
     link(rel='stylesheet', href='/bootstrap/dist/css/bootstrap.css')
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link.deskCSS(rel='stylesheet', href='/stylesheets/style.css')
+    link.mobileCSS(visibility="hidden" rel='stylesheet', href='/stylesheets/styleMobile.css')
+    script(src='/mobile-detect/mobile-detect.min.js')
     script(src='/jquery/dist/jquery.js')
     script(src='/bootstrap/dist/js/bootstrap.js')
     script(src='/javascripts/main.js')

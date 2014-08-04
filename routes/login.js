@@ -1,14 +1,18 @@
+//handles regular logins and sends user to the dash board 
+var mysql = require('mysql'),
+	dbConn = require('../dbConn.js');
+
 exports.login = function(req, res) {
 	console.log('login');
-	res.render('index');
+		
+	res.redirect('/dashboard');
 
 }
 
+//handles reqeusts from MuniMaps and sends to the building page
 exports.auth = function(req,res) {
 	console.log('auth');
 	console.log(req.body);
-	console.log(req.params.b);
-	console.log(req.params.a);
 
 }
 
