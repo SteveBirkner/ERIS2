@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	.header
+		img.logo(src='')
+		.headTitle ERIS
+	.welcome
+		.wHeader Welcome, #{user}!
+		.wCon This is the dashboard where you can find reports that need approval or past incident reports.
+	.container
+		.entry#needsApp
+			.entHead Needs Approval!
+		.entry#muniRepo
+			.entHead Past Reports
