@@ -2,9 +2,26 @@
 var mysql = require('mysql'),
 	dbConn = require('../dbConn.js');
 
+var connection = mysql.createConnection({
+		host     : dbConn.host(),
+		user     : dbConn.user(),
+		password : dbConn.pass(), 
+		database : 'mapping_accounts'
+	});
+
+connection.connect();
+
+
+
 exports.login = function(req, res) {
 	console.log('login');
-		
+	console.log(req.body['userName']);
+	
+	connection.query("SELECT `userName`,`cookieValue` FROM `ERIS_Auth` WHERE `userName` LIKE 'steven' AND `password` LIKE 'steven36' LIMIT 0, 30 ", function(err, rows, fields) {
+	  if (err) throw err;
+	  console.log('here');
+	  console.log('The solution is: ', rows[0]);
+	});	
 	res.redirect('/dashboard');
 
 }
